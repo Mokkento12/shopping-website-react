@@ -13,9 +13,36 @@
   padding-left: 120px;
 }
 
+.hightlight {
+  position: relative;
+  display: inline-block;
+  transform: rotate(-2deg);
+}
+
+.hightlight span {
+  position: relative;
+  z-index: 1;
+}
+
+.hightlight::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  bottom: 0px;
+  left: -40px;
+  right: -170px;
+  background-color: #fff;
+}
+
+.hightlight--yellow::before {
+  background-color: var(--yellow);
+  right: -110px;
+}
+
 .promo__text {}
 
 .promo__title {
+  max-width: 480px;
   margin-bottom: 40px;
   font-size: 96px;
   font-weight: 900;
@@ -30,7 +57,19 @@
   margin-bottom: 32px;
 }
 
-.promo__btn-wrapper {}
+.promo__btn-wrapper {
+  display: flex;
+  column-gap: 34px;
+  align-items: center;
+}
+
+.promo__btn-wrapper::before {
+  content: '';
+  display: inline-block;
+  width: 190px;
+  height: 32px;
+  background-image: url('./../../img/icons/decor-yellow.svg');
+}
 
 .promo__btn {
   border-radius: 10px;
