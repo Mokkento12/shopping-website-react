@@ -2,15 +2,15 @@
   margin-bottom: 63px;
 }
 
-.container {}
 
 .promo__content {
-  border-radius: 59px;
-  background: rgb(244, 246, 245);
   display: flex;
   column-gap: 24px;
   padding-top: 68px;
   padding-left: 120px;
+  border-radius: 59px;
+  background-color: #f4f6f5;
+
 }
 
 .hightlight {
@@ -39,22 +39,21 @@
   right: -110px;
 }
 
-.promo__text {}
 
 .promo__title {
   max-width: 480px;
   margin-bottom: 40px;
-  font-size: 96px;
   font-weight: 900;
-  line-height: 120px;
+  font-size: 96px;
+  line-height: 1.25;
 }
 
 .promo__desc {
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 48px;
-  letter-spacing: -5%;
   margin-bottom: 32px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: calc(48 / 32);
+  letter-spacing: -0.05em;
 }
 
 .promo__btn-wrapper {
